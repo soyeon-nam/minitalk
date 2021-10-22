@@ -35,6 +35,7 @@
 # ifndef NORMAL_BIT
 #  define NORMAL_BIT 0
 # endif
+
 struct s_bit_field
 {
 	bool	first	: 1;
@@ -58,26 +59,6 @@ typedef struct s_info
 	int						bit_ordinal_nb;
 	t_bit_field				bit_field;
 }	t_info;
-
-typedef struct s_info_b
-{
-	int				oponent_pid;
-	int				null;
-	int				killed_cnt;
-	int				received_msg_bit_cnt;
-	t_bit_field		bit_field;
-	t_list			*msg;
-}	t_info_b;
-
-typedef struct s_bonus
-{
-	int			opponent_pid;
-	int			current_pid;
-	int			msg_bit_total;
-	int			killed_cnt;
-	t_bit_field		bit_field;
-}	t_bonus;
-
 
 # include <stdio.h>
 
